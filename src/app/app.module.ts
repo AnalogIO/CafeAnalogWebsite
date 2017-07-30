@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { MembersComponent } from './members/members.component';
 import { StatsComponent } from './stats/stats.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     MembersComponent,
     StatsComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,9 @@ import { HomeComponent } from './home/home.component';
     },{
       path: 'stats',
       component: StatsComponent
+    },{
+      path: 'about',
+      component: AboutComponent
     },{
       path: '',
       redirectTo: '/home',
